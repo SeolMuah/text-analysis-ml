@@ -1,0 +1,21 @@
+[project]
+name = "text-analysis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "datasets",
+    "ipykernel",
+    "jupyter>=1.1.1",
+    "kiwipiepy",
+    "matplotlib",
+    "networkx>=3.6.1",
+    "pandas",
+    "pillow",
+    "pyvis>=0.3.2",
+    "scikit-learn",
+    "seaborn>=0.13.2",
+    "tqdm",
+    "wordcloud",
+]

@@ -3,12 +3,14 @@ name = "text-analysis"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12, <3.13"
 dependencies = [
+    "accelerate>=1.1.0",
     "datasets",
     "ipykernel",
     "jupyter>=1.1.1",
-    "kiwipiepy",
+    "kiwipiepy==0.17.0",
+    "numpy>=1.26,<2",
     "matplotlib",
     "networkx>=3.6.1",
     "pandas",
@@ -16,6 +18,13 @@ dependencies = [
     "pyvis>=0.3.2",
     "scikit-learn",
     "seaborn>=0.13.2",
+    "torch>=2.10.0",
     "tqdm",
+    "transformers>=5.3.0",
     "wordcloud",
+    "torchinfo>=1.8.0",
 ]
+
+[tool.uv]
+extra-index-url = ["https://download.pytorch.org/whl/cpu"]
+index-strategy = "unsafe-best-match"
